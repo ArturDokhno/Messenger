@@ -23,7 +23,7 @@ extension DatabaseManager {
     /// Checking new user existence
     func userExists(with email: String, complection: @escaping (Bool) -> Void) {
         
-        var safeEmail = email.replacingOccurrences(of: ".", with: "-")
+        let safeEmail = email.replacingOccurrences(of: ".", with: "-")
         
         database.child(safeEmail).observeSingleEvent(of: .value) { snapsot in
             guard snapsot.value as? String != nil else {
@@ -51,7 +51,7 @@ struct ChatAppUser {
     let emailAddress: String
     
     var safeEmail: String {
-        var safeEmail = emailAddress.replacingOccurrences(of: ".", with: "-")
+        let safeEmail = emailAddress.replacingOccurrences(of: ".", with: "-")
         return safeEmail
     }
 //    let profilePictureUrl: String

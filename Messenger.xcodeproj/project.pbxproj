@@ -94,10 +94,10 @@
 			children = (
 				0417B81729C6F214002D3F11 /* Login */,
 				0417B7F229C5FC64002D3F11 /* ConversationsViewController.swift */,
+				0417B81229C60001002D3F11 /* ProfileViewController.swift */,
 				0417B80C29C5FF96002D3F11 /* PhotoViewerViewController.swift */,
 				0417B80E29C5FFAD002D3F11 /* VideoPlayerViewController.swift */,
 				0417B81029C5FFDF002D3F11 /* NewConversationViewController.swift */,
-				0417B81229C60001002D3F11 /* ProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
