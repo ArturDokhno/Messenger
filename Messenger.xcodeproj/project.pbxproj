@@ -19,6 +19,7 @@
 		0417B80F29C5FFAD002D3F11 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417B80E29C5FFAD002D3F11 /* VideoPlayerViewController.swift */; };
 		0417B81129C5FFDF002D3F11 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417B81029C5FFDF002D3F11 /* NewConversationViewController.swift */; };
 		0417B81329C60001002D3F11 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417B81229C60001002D3F11 /* ProfileViewController.swift */; };
+		0417B81929C6F47D002D3F11 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417B81829C6F47D002D3F11 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		0417B80E29C5FFAD002D3F11 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		0417B81029C5FFDF002D3F11 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		0417B81229C60001002D3F11 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		0417B81829C6F47D002D3F11 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +83,7 @@
 		0417B80229C5FD51002D3F11 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0417B80829C5FF4F002D3F11 /* LoginViewController.swift */,
-				0417B80A29C5FF69002D3F11 /* RegisterViewController.swift */,
+				0417B81729C6F214002D3F11 /* Login */,
 				0417B7F229C5FC64002D3F11 /* ConversationsViewController.swift */,
 				0417B80C29C5FF96002D3F11 /* PhotoViewerViewController.swift */,
 				0417B80E29C5FFAD002D3F11 /* VideoPlayerViewController.swift */,
@@ -120,6 +121,7 @@
 			children = (
 				0417B7EE29C5FC64002D3F11 /* AppDelegate.swift */,
 				0417B7F029C5FC64002D3F11 /* SceneDelegate.swift */,
+				0417B81829C6F47D002D3F11 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -131,6 +133,15 @@
 				0417B7F929C5FC65002D3F11 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0417B81729C6F214002D3F11 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0417B80829C5FF4F002D3F11 /* LoginViewController.swift */,
+				0417B80A29C5FF69002D3F11 /* RegisterViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +220,7 @@
 				0417B81129C5FFDF002D3F11 /* NewConversationViewController.swift in Sources */,
 				0417B7F329C5FC64002D3F11 /* ConversationsViewController.swift in Sources */,
 				0417B80F29C5FFAD002D3F11 /* VideoPlayerViewController.swift in Sources */,
+				0417B81929C6F47D002D3F11 /* Extensions.swift in Sources */,
 				0417B7EF29C5FC64002D3F11 /* AppDelegate.swift in Sources */,
 				0417B81329C60001002D3F11 /* ProfileViewController.swift in Sources */,
 				0417B7F129C5FC64002D3F11 /* SceneDelegate.swift in Sources */,
