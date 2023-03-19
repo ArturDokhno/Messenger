@@ -20,7 +20,8 @@
 		0417B81129C5FFDF002D3F11 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417B81029C5FFDF002D3F11 /* NewConversationViewController.swift */; };
 		0417B81329C60001002D3F11 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417B81229C60001002D3F11 /* ProfileViewController.swift */; };
 		0417B81929C6F47D002D3F11 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417B81829C6F47D002D3F11 /* Extensions.swift */; };
-		04C26A8A29C71F04002D2826 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C26A8929C71F04002D2826 /* GoogleService-Info.plist */; };
+		04C26A8C29C722D0002D2826 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04C26A8B29C722D0002D2826 /* GoogleService-Info.plist */; };
+		04C26A8E29C728D6002D2826 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C26A8D29C728D6002D2826 /* DatabaseManager.swift */; };
 		04FBBC8529C70C86000E3862 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 04FBBC8429C70C86000E3862 /* FirebaseAuth */; };
 		04FBBC8729C70C86000E3862 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 04FBBC8629C70C86000E3862 /* FirebaseDatabase */; };
 /* End PBXBuildFile section */
@@ -41,7 +42,8 @@
 		0417B81029C5FFDF002D3F11 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		0417B81229C60001002D3F11 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		0417B81829C6F47D002D3F11 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		04C26A8929C71F04002D2826 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		04C26A8B29C722D0002D2826 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		04C26A8D29C728D6002D2826 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +83,7 @@
 				0417B80429C5FD5F002D3F11 /* Models */,
 				0417B80329C5FD5A002D3F11 /* Views */,
 				0417B80229C5FD51002D3F11 /* Controllers */,
-				04C26A8929C71F04002D2826 /* GoogleService-Info.plist */,
+				04C26A8B29C722D0002D2826 /* GoogleService-Info.plist */,
 				0417B7FC29C5FC65002D3F11 /* Info.plist */,
 			);
 			path = Messenger;
@@ -129,6 +131,7 @@
 				0417B7EE29C5FC64002D3F11 /* AppDelegate.swift */,
 				0417B7F029C5FC64002D3F11 /* SceneDelegate.swift */,
 				0417B81829C6F47D002D3F11 /* Extensions.swift */,
+				04C26A8D29C728D6002D2826 /* DatabaseManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -217,9 +220,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0417B7FB29C5FC65002D3F11 /* LaunchScreen.storyboard in Resources */,
-				04C26A8A29C71F04002D2826 /* GoogleService-Info.plist in Resources */,
 				0417B7F829C5FC65002D3F11 /* Assets.xcassets in Resources */,
 				0417B7F629C5FC64002D3F11 /* Main.storyboard in Resources */,
+				04C26A8C29C722D0002D2826 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0417B80929C5FF4F002D3F11 /* LoginViewController.swift in Sources */,
+				04C26A8E29C728D6002D2826 /* DatabaseManager.swift in Sources */,
 				0417B80B29C5FF69002D3F11 /* RegisterViewController.swift in Sources */,
 				0417B81129C5FFDF002D3F11 /* NewConversationViewController.swift in Sources */,
 				0417B7F329C5FC64002D3F11 /* ConversationsViewController.swift in Sources */,
