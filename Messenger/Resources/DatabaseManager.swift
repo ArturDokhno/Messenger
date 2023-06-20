@@ -36,11 +36,18 @@ extension DatabaseManager {
     }
     
     /// Insert new user to database
-    func insertUser(with user: ChatAppUser) {
+    func insertUser(with user: ChatAppUser, completion: @escaping (Bool) -> Void) {
         database.child(user.safeEmail).setValue([
             "first_name": user.firstName,
             "last_name": user.lastName
-        ])
+        ]) { error, _ in
+            guard error == nil else {
+                print("Запись в базу данных не удалась")
+                completion(false)
+                return
+            }
+            completion(true)
+        }
     }
     
 }
@@ -54,5 +61,8 @@ struct ChatAppUser {
         let safeEmail = emailAddress.replacingOccurrences(of: ".", with: "-")
         return safeEmail
     }
-//    let profilePictureUrl: String
+    
+    var profilePictureFileName: String {
+        return "\(safeEmail)_profile_picture.png"
+    }
 }
